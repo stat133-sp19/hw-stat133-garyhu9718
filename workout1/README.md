@@ -1,0 +1,1 @@
+This HW is about analyzing the shooting data of 5 GSW players, which includes the summarizing the given data, creating shot charts and effective shot table.
