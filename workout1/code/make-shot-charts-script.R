@@ -24,7 +24,7 @@ court_image = rasterGrob(
 thompson_shot_chart = ggplot(thompson)+
   annotation_custom(court_image, -250,250,-50,420)+
   geom_point(aes(x = x , y = y,color = shot_made_flag))+
-  ylim(-50,240)+
+  ylim(-50,420)+
   ggtitle("Shot Chart: Klay Thompson(2016 season)")+
   theme_minimal()+
   ggsave("../images/klay-thompson-shot-chart.pdf", width = 6.5, height = 5, units = "in")
@@ -32,7 +32,7 @@ thompson_shot_chart = ggplot(thompson)+
 curry_shot_chart = ggplot(curry)+
   annotation_custom(court_image, -250,250,-50,420)+
   geom_point(aes(x = x , y = y,color = shot_made_flag))+
-  ylim(-50,240)+
+  ylim(-50,420)+
   ggtitle("Shot Chart: Stephen Curry(2016 season)")+
   theme_minimal()+
   ggsave("../images/stephen-curry-shot-chart.pdf", width = 6.5, height = 5, units = "in")
@@ -40,7 +40,7 @@ curry_shot_chart = ggplot(curry)+
 green_shot_chart = ggplot(green)+
   annotation_custom(court_image, -250,250,-50,420)+
   geom_point(aes(x = x , y = y,color = shot_made_flag))+
-  ylim(-50,240)+
+  ylim(-50,420)+
   ggtitle("Shot Chart: Draymond Green(2016 season)")+
   theme_minimal()+
   ggsave("../images/draymond-green-shot-chart.pdf", width = 6.5, height = 5, units = "in")
@@ -48,7 +48,7 @@ green_shot_chart = ggplot(green)+
 durant_shot_chart = ggplot(durant)+
   annotation_custom(court_image, -250,250,-50,420)+
   geom_point(aes(x = x , y = y,color = shot_made_flag))+
-  ylim(-50,240)+
+  ylim(-50,420)+
   ggtitle("Shot Chart: Kevin Durant(2016 season)")+
   theme_minimal()+
   ggsave("../images/kevin-durant-shot-chart.pdf", width = 6.5, height = 5, units = "in")
@@ -56,7 +56,7 @@ durant_shot_chart = ggplot(durant)+
 iguodala_shot_chart = ggplot(iguodala)+
   annotation_custom(court_image, -250,250,-50,420)+
   geom_point(aes(x = x , y = y,color = shot_made_flag))+
-  ylim(-50,240)+
+  ylim(-50,420)+
   ggtitle("Shot Chart: Andre Iguodala(2016 season)")+
   theme_minimal()+
   ggsave("../images/andre-iguodala-shot-chart.pdf", width = 6.5, height = 5, units = "in")
@@ -64,7 +64,7 @@ iguodala_shot_chart = ggplot(iguodala)+
 gsw_shot_chart = ggplot(data)+
   annotation_custom(court_image, -250,250,-50,420)+
   geom_point(aes(x = x , y = y,color = shot_made_flag))+
-  ylim(-50,240)+
+  ylim(-50,420)+
   ggtitle("Shot Chart:GSW (2016 season)")+
   theme_minimal()+
   facet_wrap(~name)+
