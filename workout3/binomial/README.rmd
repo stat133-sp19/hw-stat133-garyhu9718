@@ -1,0 +1,82 @@
+---
+output:
+  github_document:
+    html_preview: false
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+
+## Overview
+
+`"binomial"` is a minimal [R](http://www.r-project.org/) package 
+that provides functions to simulate binomial distribution.
+
+* `bin_variable()` creates a binomial object (of class `"binvar"`)
+* `bin_mean()` calculate the mean of a binomial distribution
+* `bin_variance()` calculate the variance of a binomial distribution
+* `bin_skewness()` calculate the skeeness of a binomial distribution
+* `bin_mode()` calculate the mdoe of a binomial distribution
+* `bin_kurtosis()` calculate the kurtosis of a binomial distribution
+* `bin_distribution()` creates a binomial distribution object (of class `"bindis"`)
+* `bin_cumulative()` creates a binomial cumulative probability object (of class `"bincum"`)
+* `plot()` method for `"bindis"` and `"bindis"` objects to plot probability graphs
+* `summary` method for a `"binvar"` object to create a summary.
+
+
+
+## Motivation
+
+This package has been developed to illustrate statistic information 
+
+
+## Installation
+
+Install the development version from GitHub via the package `"devtools"`:
+
+```r
+# development version from GitHub:
+#install.packages("binomial") 
+# install "binomial" (without vignettes)
+devtools::install_github("stat133-sp19/hw-stat133-garyhu9718/tree/master/workout3/binomial")
+# install "binomial" (with vignettes)
+devtools::install_github("stat133-sp19/hw-stat133-garyhu9718/tree/master/workout3/binomial", build_vignettes = TRUE)
+```
+
+
+## Usage
+
+```{r}
+library(binomial)
+#create binomial obeject
+s1 = bin_variable(5,0.5)
+s1
+
+#summarize the object
+summary(s1)
+
+#calculate the basic statistic information
+bin_mean(5,0.5)
+bin_variance(5,0.5)
+bin_mode(5,0.5)
+bin_skewness(5,0.5)
+bin_kurtosis(5,0.5)
+
+#create a bindis object and plot it 
+s2 = bin_distribution(5,0.5)
+s2
+p1 = plot(s2)
+
+#create a bincum object and plot it 
+s3 = bin_cumulative(5,0.5)
+s3
+p2 = plot(s3)
+```
