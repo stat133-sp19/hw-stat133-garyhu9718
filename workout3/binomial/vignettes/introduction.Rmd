@@ -1,0 +1,85 @@
+---
+title: "introduction"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{introduction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(binomial)
+```
+
+##Binomial 
+
+The package `"binomial"`is a package sketching random variables that follow the binomial distribution.The package includes a series of functions summarizing the statistic information and creating simulation.
+
+##Calculating the choosing number
+
+In binomial distribution, there is a necessaty to calculate the number of combinations of k objects from a population of n objects. For that sake, we have function bin_choose(), here is an example when n = 10, k = 3:
+```{r}
+bin_choose(n = 10,k = 3)
+```
+
+Also, we can vetorize the process like:
+```{r}
+bin_choose(10,1:3)
+```
+That will create a vector consisting of the choosing number of 1,2 and 3 objects.
+
+##The probability 
+One of the questions we care on the binomial distributon is the probability of outcome with a certain number of success, there is a function bin_probability that achieves this in the way below:
+```{r}
+bin_probability(n = 10, k=4, p = 0.1)
+```
+
+Similarly, we can vertorize the process:
+```{r}
+bin_probability(10,1:3,0.1)
+```
+
+##Binomial variable
+Given the probability of single success and the total number of trials, we use the function bin_variable() to form a binvar object representing a binomial distribution, which is a list consisting of the trial times and probability.
+```{r}
+bin_variable(10,0.1)
+```
+
+###Printing method for the binvar object 
+To better illustrate information of the binvar object, we redefine the printing method for it.
+```{r}
+print(bin_variable(10,0.1))
+```
+###Summary of the binvar
+A customized method to summarize the distribution is created in the package, by inputting the binvar object, we can get a list containing the basic statistic information of the distribution. Besides, we give this kind of list a certain class called summary.binvar, and designed printing method for it.
+```{r}
+s = summary(bin_variable(10,0.5))
+s
+```
+
+##Binomial ditribution
+bin_distribution is a function that using the give trial times and probability of single trial's success to form a data fram recording the times of success and corresponding probability.
+```{r}
+s2 = bin_distribution(5,0.5)
+s2
+```
+
+And a defined plot method can be used to get the bar chart.
+```{r}
+plot(s2)
+```
+
+##Binomial cumulative 
+Function bin_cumulative is designed to illustrate the cumulative probability of the ditribution. A plotting method is also provided.
+```{r}
+s3 = bin_cumulative(10,0.1)
+s3
+plot(s3)
+```
