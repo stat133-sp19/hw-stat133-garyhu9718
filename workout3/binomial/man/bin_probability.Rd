@@ -19,3 +19,6 @@ the probability of succeding n times
 \description{
 calculate the probabilities of certain number of times of success
 }
+\examples{
+bin_probability(10,5,0.3)
+}

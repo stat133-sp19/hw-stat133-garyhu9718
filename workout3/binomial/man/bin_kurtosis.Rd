@@ -17,3 +17,6 @@ the calculated kurtosis
 \description{
 calculate the kurtosis of a random variable following the binomial distribution
 }
+\examples{
+bin_kurtosis(5,0.5)
+}

@@ -4,7 +4,7 @@
 #' @param k the times of success
 #' @return the number of combinations
 #' @export
-#' @example
+#' @examples
 #' n = 5
 #' k = 3
 #' bin_choose(n,k) #calculating the number of combinations of choosing 2 objects among 5.

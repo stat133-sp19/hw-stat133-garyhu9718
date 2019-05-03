@@ -17,3 +17,6 @@ a list consisting of the number of trials and the probability of single success
 \description{
 form a binomial object
 }
+\examples{
+bin_variable(10,0.3)
+}

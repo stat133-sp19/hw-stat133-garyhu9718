@@ -4,7 +4,7 @@
 #' @param p the probability of single success
 #' @return a dataframe recording the probability and cumulative probability
 #' @export
-#' @example
+#' @examples
 #' bin_cumulative(5,0.5)
 
 bin_cumulative =  function(n,p){
@@ -24,10 +24,10 @@ bin_cumulative =  function(n,p){
 #' @title binomial cumulative distribution plot
 #' @description plot the cumulative distribution graph
 #' @param x a bincum dataframe recording the cumulative distribution information
-#' @para ... arguments from other functions
+#' @param ... arguments from other functions
 #' @return the cumulative distribution graph
 #' @export
-#' @example
+#' @examples
 #' plot(bin_cumulative(10, 0.2))
 
 

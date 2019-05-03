@@ -17,3 +17,6 @@ the calculated mean
 \description{
 calculate the mean of a random variable following the binomial distribution
 }
+\examples{
+bin_mean(5,0.5)
+}

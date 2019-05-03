@@ -14,3 +14,6 @@
 \description{
 print out the summary of a summary of binomial distribution
 }
+\examples{
+print(summary(bin_variable(10,0.3)))
+}

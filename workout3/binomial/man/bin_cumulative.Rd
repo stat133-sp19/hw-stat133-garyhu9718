@@ -17,3 +17,6 @@ a dataframe recording the probability and cumulative probability
 \description{
 produce a table of cumulative probability
 }
+\examples{
+bin_cumulative(5,0.5)
+}

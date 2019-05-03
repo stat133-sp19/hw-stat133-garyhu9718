@@ -17,3 +17,6 @@ the calculated variance
 \description{
 calculate the variance of a random variable following the binomial distribution
 }
+\examples{
+bin_variance(5,0.5)
+}

@@ -7,6 +7,8 @@
 \method{plot}{bincum}(y, ...)
 }
 \arguments{
+\item{...}{arguments from other functions}
+
 \item{x}{a bincum dataframe recording the cumulative distribution information}
 }
 \value{
@@ -14,4 +16,7 @@ the cumulative distribution graph
 }
 \description{
 plot the cumulative distribution graph
+}
+\examples{
+plot(bin_cumulative(10, 0.2))
 }

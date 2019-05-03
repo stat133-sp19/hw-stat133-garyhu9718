@@ -17,3 +17,6 @@ a list consisting of all the basis statistic information about the distribution
 \description{
 summary a binomial variable
 }
+\examples{
+summary(bin_variable(10,0.3))
+}

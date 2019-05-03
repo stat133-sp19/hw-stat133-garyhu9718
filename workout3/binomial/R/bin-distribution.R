@@ -4,7 +4,7 @@
 #' @param p the probability of success of single trial
 #' @return a data frame recording the times of success and corresponding probabilities
 #' @export
-#' @example
+#' @examples
 #' bin_distribution(10, 0.2)
 #'
 #' #the distribution table of 10 trials with success probability of 01.
@@ -22,10 +22,10 @@ bin_distribution = function(n, p){
 #' @title binomial distribution plot
 #' @description plot the distribution graph
 #' @param x a bindis dataframe recording the distribution information
-#' @para ... arguments from other functions
+#' @param ... arguments from other functions
 #' @return the distribution graph
 #' @export
-#' @example
+#' @examples
 #' plot(bin_distribution(10, 0.2))
 
 plot.bindis = function(x,...){

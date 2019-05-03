@@ -4,7 +4,7 @@
 #' @param p the probability of single success
 #' @return the calculated mean
 #' @export
-#' @example
+#' @examples
 #' bin_mean(5,0.5)
 
 bin_mean = function(n,p){
@@ -19,7 +19,7 @@ bin_mean = function(n,p){
 #' @param p the probability of single success
 #' @return the calculated variance
 #' @export
-#' @example
+#' @examples
 #' bin_variance(5,0.5)
 
 bin_variance = function(n,p){
@@ -35,7 +35,7 @@ bin_variance = function(n,p){
 #' @param p the probability of single success
 #' @return the calculated mode
 #' @export
-#' @example
+#' @examples
 #' bin_mode(5,0.5)
 
 bin_mode = function(n,p){
@@ -50,7 +50,7 @@ bin_mode = function(n,p){
 #' @param p the probability of single success
 #' @return the calculated skewness
 #' @export
-#' @example
+#' @examples
 #' bin_skewness(5,0.5)
 
 bin_skewness = function(n,p){
@@ -66,7 +66,7 @@ bin_skewness = function(n,p){
 #' @param p the probability of single success
 #' @return the calculated kurtosis
 #' @export
-#' @example
+#' @examples
 #' bin_kurtosis(5,0.5)
 
 bin_kurtosis= function(n,p){

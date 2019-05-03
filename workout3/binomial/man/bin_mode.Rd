@@ -17,3 +17,6 @@ the calculated mode
 \description{
 calculate the mode of a random variable following the binomial distribution
 }
+\examples{
+bin_mode(5,0.5)
+}

@@ -4,7 +4,7 @@
 #' @param p the probability of single success
 #' @return a list consisting of the number of trials and the probability of single success
 #' @export
-#' @example
+#' @examples
 #' bin_variable(10,0.3)
 
 bin_variable = function(n,p){
@@ -22,7 +22,7 @@ bin_variable = function(n,p){
 #' @param x a list with the class of binvar
 #' @param ... other inputs passed from other functions
 #' @export
-#' @example
+#' @examples
 #' print(bin_variable(10,0.3))
 
 print.binvar = function(x,...){
@@ -41,7 +41,7 @@ print.binvar = function(x,...){
 #' @param ... other inputs passed from other functions
 #' @return a list consisting of all the basis statistic information about the distribution
 #' @export
-#' @example
+#' @examples
 #' summary(bin_variable(10,0.3))
 
 summary.binvar = function(x,...){
@@ -58,7 +58,7 @@ summary.binvar = function(x,...){
 #' @param x a list, summary of the binomial object
 #' @param ... inputs passed from ohter functions
 #' @export
-#' @example
+#' @examples
 #' print(summary(bin_variable(10,0.3)))
 
 print.summary.binvar = function(x,...){

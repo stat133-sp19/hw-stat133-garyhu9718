@@ -8,10 +8,15 @@
 }
 \arguments{
 \item{x}{a bindis dataframe recording the distribution information}
+
+\item{...}{arguments from other functions}
 }
 \value{
 the distribution graph
 }
 \description{
 plot the distribution graph
+}
+\examples{
+plot(bin_distribution(10, 0.2))
 }

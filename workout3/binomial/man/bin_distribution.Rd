@@ -17,3 +17,8 @@ a data frame recording the times of success and corresponding probabilities
 \description{
 form the distribution table
 }
+\examples{
+bin_distribution(10, 0.2)
+
+#the distribution table of 10 trials with success probability of 01.
+}

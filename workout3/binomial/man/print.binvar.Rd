@@ -14,3 +14,6 @@
 \description{
 print out a binomial variable
 }
+\examples{
+print(bin_variable(10,0.3))
+}
